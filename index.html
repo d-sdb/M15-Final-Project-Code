@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<main>
+  <div class="spacer"></div>
+
+  <!-- header section -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/mock-macon-county-north-carolina.png" alt="logo" class="logo" style="height: 65px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+          <ul class="navbar-nav nav-fill w-100 text-center">
+            <li class="nav-item"><a class="nav-link" href="residents.html">Residents</a></li>
+            <li class="nav-item"><a class="nav-link" href="government.html">Government</a></li>
+            <li class="nav-item"><a class="nav-link" href="business.html">Businesses</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="visitors.html" id="visitorsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Visitors</a>
+              <ul class="dropdown-menu" aria-labelledby="visitorsDropdown">
+                <li><a class="dropdown-item" href="visitors.html">Tour Macon County</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Bootstrap Carousel Section -->
+  <div id="homepageCarousel" class="carousel slide image-container" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/pexels-daniel-zabinski-2151650935-31781013.jpg" class="d-block w-100 image-below-nav" alt="Welcome to Macon County">
+        <div class="image-overlay-card">
+          <h2>Welcome to Macon County!</h2>
+          <p>Located in the heart of the Blue Ridge Mountains, Macon County offers natural beauty, a vibrant community, and opportunities for residents, businesses, and visitors alike.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/pexels-rachel-claire-5865207.jpg" class="d-block w-100 image-below-nav" alt="Events">
+        <div class="image-overlay-card">
+          <h2>Experience Our Events</h2>
+          <p>Join vibrant community activities happening all year round.</p>
+          <a href="events.html" class="custom-learn-more-btn">Discover More</a>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <img src="images/pexels-nc-farm-bureau-mark-14144584.jpg" class="d-block w-100 image-below-nav" alt="Explore">
+        <div class="image-overlay-card">
+          <h2>Explore Nature</h2>
+          <p>Adventure awaits in the scenic beauty of Macon County.</p>
+          <a href="visitors.html" class="custom-learn-more-btn">Plan Your Visit</a>
+        </div>
+      </div>
+      
+    <button class="carousel-control-prev" type="button" data-bs-target="#homepageCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#homepageCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  
+  <section class="services-section">
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="images/list-2389219_640.png" alt="Forms Icon">
+        <h3>Access Public Forms</h3>
+        <p>Quickly find permits, licenses, and official documents needed for services.</p>
+        <a href="residents.html" class="read-more">View Forms ➔</a>
+      </div>
+  
+      <div class="service-card">
+        <img src=" images/client-1295901_640.png" alt="Gov Icon">
+        <h3>Government Services </h3>
+        <p>Access local government resources, departments, and public services for Macon County residents and businesses.</p>
+        <a href="government.html" class="read-more">View Notices ➔</a>
+      </div>
+     
+      <div class="service-card">
+        <img src="images/survey-2316468_640.png" alt="business Icon">
+        <h3>Business Resources</h3>
+        <p>Resources and information to help businesses grow and prosper in our county.</p>
+        <a href="business.html" class="read-more">Learn More ➔</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- news section -->
+  <section class="news-section">
+    <h2>Latest News</h2>
+    <a href="news.html" class="view-all-link">View Recent News ➔</a>
+    <div class="three-column-layout">
+      <div class="column">
+        <div class="news-date">April 25, 2025</div>
+        <h3>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="news.html" class="news-link">Read more ➔</a>
+        <hr class="blue-line" />
+      </div>
+      <div class="column">
+        <div class="news-date">April 24, 2025</div>
+        <h3>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="news.html" class="news-link">Read more ➔</a>
+        <hr class="blue-line" />
+      </div>
+      <div class="column">
+        <div class="news-date">April 23, 2025</div>
+        <h3>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="news.html" class="news-link">Read more ➔</a>
+        <hr class="blue-line" />
+      </div>
+      <div class="column">
+        <div class="news-date">April 22, 2025</div>
+        <h3>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="news.html" class="news-link">Read more ➔</a>
+        <hr class="blue-line" />
+      </div>
+      <div class="column">
+        <div class="news-date">April 21, 2025</div>
+        <h3>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <a href="news.html" class="news-link">Read more ➔</a>
+        <hr class="blue-line" />
+      </div>
+      <div class="column">
+        <div class="news-date">April 20, 2025</div>
+        <h3>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="news.html" class="news-link">Read more ➔</a>
+        <hr class="blue-line" />
+      </div>
+    </div>
+  </section>
+
+  <!-- events section -->
+  <section class="events-section">
+    <h2>Upcoming Events</h2>
+    <a href="events.html" class="view-all-link">View All Events ➔</a>
+
+    <div class="events-grid">
+      <div class="event-card">
+        <img src="images/calender-2389150_640.png" alt="Lorem Ipsum Dolor">
+        <div class="event-card-content">
+          <div class="event-date">Monday, April 28, 2025</div>
+          <div class="event-title">Lorem Ipsum Event One</div>
+          <div class="event-location">📍 Lorem Street, Ipsumville, NC</div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="images/calender-2389150_640.png" alt="Lorem Ipsum Dolor">
+        <div class="event-card-content">
+          <div class="event-date">Monday, April 28, 2025</div>
+          <div class="event-title">Dolor Sit Amet Gathering</div>
+          <div class="event-location">📍 Consectetur Ave, Lorem, NC</div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="images/calender-2389150_640.png" alt="Lorem Ipsum Dolor">
+        <div class="event-card-content">
+          <div class="event-date">Monday, April 28, 2025</div>
+          <div class="event-title">Adipiscing Elit Panel</div>
+          <div class="event-location">📍 Elit Blvd, Ipsum, NC</div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="images/calender-2389150_640.png" alt="Lorem Ipsum Dolor">
+        <div class="event-card-content">
+          <div class="event-date">Tuesday, April 29, 2025</div>
+          <div class="event-title">Tempor Incididunt Workshop</div>
+          <div class="event-location">📍 Tempor Ln, Dolor City, NC</div>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="images/calender-2389150_640.png" alt="Lorem Ipsum Dolor">
+        <div class="event-card-content">
+          <div class="event-date">Tuesday, April 29, 2025</div>
+          <div class="event-title">Tempor Incididunt Workshop</div>
+          <div class="event-location">📍 Tempor Ln, Dolor City, NC</div>
+        </div>
+      </div>
+            <div class="event-card">
+        <img src="images/calender-2389150_640.png" alt="Lorem Ipsum Dolor">
+        <div class="event-card-content">
+          <div class="event-date">Tuesday, April 29, 2025</div>
+          <div class="event-title">Tempor Incididunt Workshop</div>
+          <div class="event-location">📍 Tempor Ln, Dolor City, NC</div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2010 Macon County, North Carolina 5 West Main Street • Franklin, NC 28734 Phone: 828-349-2000</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <main>
+    <!-- header section with logo -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/mock-macon-county-north-carolina.png" alt="logo" class="logo" style="height: 65px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-fill w-100 text-center">
+              <li class="nav-item"><a class="nav-link" href="residents.html">Residents</a></li>
+              <li class="nav-item"><a class="nav-link" href="government.html">Government</a></li>
+              <li class="nav-item"><a class="nav-link" href="business.html">Businesses</a></li>
+              <li class="nav-item"><a class="nav-link" href="visitors.html">Visitors</a></li>
+              <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+<!-- event filters section -->
+<div class="events-page-wrapper">
+  <section class="event-filters-wrapper">
+    <div class="container">
+      <div class="event-header d-flex justify-content-between align-items-end mb-2">
+        <div>
+          <h3 class="events-title mb-1">Events</h3>
+          <p class="events-subtitle mb-0">Find community events, meetings, and more.</p>
+        </div>
+        <button class="btn btn-link p-0 toggle-button align-self-end" type="button" data-bs-toggle="collapse" data-bs-target="#eventFiltersCollapse" aria-controls="eventFiltersCollapse">
+          <i class="bi bi-caret-down-fill rotate-icon"></i>
+        </button>
+      </div>
+      <div class="gray-divider"></div>
+      <!-- collapsible content -->
+      <div class="collapse" id="eventFiltersCollapse">
+        <div class="event-filters">
+          <!-- search events -->
+          <div class="mb-4">
+            <label class="form-label">Search Events</label>
+            <input type="text" class="form-control" placeholder="Search events, meetings etc.">
+          </div>
+
+          <!-- advanced filters -->
+          <div class="row g-3">
+            <div class="col-md-4">
+              <label>Department</label>
+              <select class="form-select">
+                <option selected>Select a Department</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label>Event Category</label>
+              <select class="form-select">
+                <option selected>Select an Event Category</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label>Audience(s)</label>
+              <select class="form-select">
+                <option selected>- None -</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label>Location</label>
+              <select class="form-select">
+                <option selected>Select a Location</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label>Date From</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="col-md-4">
+              <label>Date To</label>
+              <input type="date" class="form-control">
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-start mt-4">
+            <button class="btn btn-primary px-5">Go</button>
+          </div>
+
+          <div class="subscribe-link mt-4">
+            <p>To subscribe to events with these filters, copy this link into your calendar application:
+              <input type="text" class="form-control mt-2" value="https://www.lorem.ipsum/events/" readonly>
+            </p>
+          </div>
+
+          <div class="view-buttons mt-3 d-flex gap-3">
+            <button class="btn btn-outline-primary">
+              <i class="bi bi-grid-3x3-gap-fill"></i> Grid
+            </button>
+            <button class="btn btn-outline-primary">
+              <i class="bi bi-calendar-event"></i> Calendar
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+      <!-- events grid -->
+      <div class="events-page-grid">
+        <div class="events-page-cards">
+          <div class="event-page-card">
+            <img src="images/calender-2389150_640.png" alt="Event Image">
+            <div class="event-page-card-content">
+              <div class="event-page-date">Thursday, May 8, 2025</div>
+              <div class="event-page-title">Lorem Ipsum Dolor Sit Amet</div>
+              <div class="event-page-location"><i>📍</i>2145 Suttle Ave, Charlotte, NC</div>
+            </div>
+          </div>
+          
+          <div class="event-page-card">
+            <img src="images/calender-2389150_640.png" alt="Event Image">
+            <div class="event-page-card-content">
+              <div class="event-page-date">Monday, May 19, 2025</div>
+              <div class="event-page-title">Consectetur Adipiscing Elit</div>
+              <div class="event-page-location"><i>📍</i>2145 Suttle Ave, Charlotte, NC</div>
+            </div>
+          </div>
+          
+          <div class="event-page-card">
+            <img src="images/calender-2389150_640.png" alt="Event Image">
+            <div class="event-page-card-content">
+              <div class="event-page-date">Wednesday, May 28, 2025</div>
+              <div class="event-page-title">Sed Do Eiusmod Tempor</div>
+              <div class="event-page-location"><i>📍</i>2145 Suttle Ave, Charlotte, NC</div>
+            </div>
+          </div>
+          
+          <div class="event-page-card">
+            <img src="images/calender-2389150_640.png" alt="Event Image">
+            <div class="event-page-card-content">
+              <div class="event-page-date">Friday, June 6, 2025</div>
+              <div class="event-page-title">Incididunt Ut Labore</div>
+              <div class="event-page-location"><i>📍</i>2145 Suttle Ave, Charlotte, NC</div>
+            </div>
+          </div>
+          
+          <div class="event-page-card">
+            <img src="images/calender-2389150_640.png" alt="Event Image">
+            <div class="event-page-card-content">
+              <div class="event-page-date">Saturday, June 14, 2025</div>
+              <div class="event-page-title">Et Dolore Magna Aliqua</div>
+              <div class="event-page-location"><i>📍</i>2145 Suttle Ave, Charlotte, NC</div>
+            </div>
+          </div>
+          
+          <div class="event-page-card">
+            <img src="images/calender-2389150_640.png" alt="Event Image">
+            <div class="event-page-card-content">
+              <div class="event-page-date">Tuesday, June 24, 2025</div>
+              <div class="event-page-title">Ut Enim Ad Minim Veniam</div>
+              <div class="event-page-location"><i>📍</i>2145 Suttle Ave, Charlotte, NC</div>
+            </div>
+          </div>
+          
+          <div class="event-page-card">
+            <img src="images/calender-2389150_640.png" alt="Event Image">
+            <div class="event-page-card-content">
+              <div class="event-page-date">Thursday, July 3, 2025</div>
+              <div class="event-page-title">Quis Nostrud Exercitation</div>
+              <div class="event-page-location"><i>📍</i>2145 Suttle Ave, Charlotte, NC</div>
+            </div>
+          </div>
+          
+          <div class="event-page-card">
+            <img src="images/calender-2389150_640.png" alt="Event Image">
+            <div class="event-page-card-content">
+              <div class="event-page-date">Sunday, July 13, 2025</div>
+              <div class="event-page-title">Ullamco Laboris Nisi Ut</div>
+              <div class="event-page-location"><i>📍</i>2145 Suttle Ave, Charlotte, NC</div>
+            </div>
+          </div>
+          
+          <div class="event-page-card">
+            <img src="images/calender-2389150_640.png" alt="Event Image">
+            <div class="event-page-card-content">
+              <div class="event-page-date">Tuesday, July 22, 2025</div>
+              <div class="event-page-title">Aliquip Ex Ea Commodo</div>
+              <div class="event-page-location"><i>📍</i>2145 Suttle Ave, Charlotte, NC</div>
+            </div>
+          </div>
+          
+          <div class="event-page-card">
+            <img src="images/calender-2389150_640.png" alt="Event Image">
+            <div class="event-page-card-content">
+              <div class="event-page-date">Friday, August 1, 2025</div>
+              <div class="event-page-title">Consequat Duis Aute</div>
+              <div class="event-page-location"><i>📍</i>2145 Suttle Ave, Charlotte, NC</div>
+            </div>
+          </div>
+          
+          <div class="event-page-card">
+            <img src="images/calender-2389150_640.png" alt="Event Image">
+            <div class="event-page-card-content">
+              <div class="event-page-date">Sunday, August 10, 2025</div>
+              <div class="event-page-title">Irure Dolor In Reprehenderit</div>
+              <div class="event-page-location"><i>📍</i>2145 Suttle Ave, Charlotte, NC</div>
+            </div>
+          </div>
+          
+          <div class="event-page-card">
+            <img src="images/calender-2389150_640.png" alt="Event Image">
+            <div class="event-page-card-content">
+              <div class="event-page-date">Wednesday, August 20, 2025</div>
+              <div class="event-page-title">In Voluptate Velit Esse</div>
+              <div class="event-page-location"><i>📍</i>2145 Suttle Ave, Charlotte, NC</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <p>© 2010 Macon County, North Carolina 5 West Main Street • Franklin, NC 28734 Phone: 828-349-2000</p>
+  </footer>
+
+  
+</body>
+</html>
