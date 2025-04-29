@@ -38,7 +38,12 @@ header {
 .navbar-brand img {
   max-height: 80px;
 }
-
+.brand-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  color: #333333;
+  font-weight: 600;
+}
 .navbar-nav .nav-link {
   color: #333333;
   font-size: 1.25rem;
@@ -180,7 +185,7 @@ main {
 .image-overlay-card h2 {
   font-size: 27px;
   font-weight: bold;
-  color: #212529;
+  color: #003366;
   margin-bottom: 15px;
   text-align: left;
 }
@@ -1696,6 +1701,7 @@ button[aria-expanded="false"] .rotate-icon {
   .navbar {
     padding: 0.5rem 1rem;
     position: relative;
+    z-index: 1050;
   }
 
   .navbar-brand {
@@ -1746,6 +1752,7 @@ button[aria-expanded="false"] .rotate-icon {
     height: 55px;
     width: auto;
     max-width: 100%;
+    margin-right: 10px;
   }
 }
 
