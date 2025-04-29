@@ -178,7 +178,7 @@ main {
 }
 
 .image-overlay-card h2 {
-  font-size: 24px;
+  font-size: 27px;
   font-weight: bold;
   color: #212529;
   margin-bottom: 15px;
@@ -831,6 +831,7 @@ font-family: 'Arial', sans-serif;
   font-size: 24px;
   color: #003366;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .residents-hero-subtitle {
@@ -975,9 +976,10 @@ font-family: 'Arial', sans-serif;
 }
 
 .business-hero-title {
-  font-size: 24px;
+  font-size: 27px;
   color: #003366;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .business-hero-subtitle {
@@ -1039,8 +1041,8 @@ font-family: 'Arial', sans-serif;
 
 .business-resources-section h5 {
   font-family: 'Arial', sans-serif;
-  font-size: small;
-  color: #003366;
+  font-size: 20;
+  color: #333333;
   text-align: left;
   margin-top: 20px;
 }
@@ -1077,13 +1079,13 @@ font-family: 'Arial', sans-serif;
 
 .business-gov-card h4 {
   margin: 10px 0;
-  font-size: 1.1rem;
+  font-size: 27px;
   color: #003366;
   font-family: 'Open Sans', sans-serif;
 }
 
 .business-gov-card p {
-  font-size: 0.95rem;
+  font-size: 16px;
   color: #495057;
   margin-bottom: 1rem;
   font-family: Arial, sans-serif;
@@ -1212,9 +1214,10 @@ font-family: 'Arial', sans-serif;
 }
 
 .government-hero-title {
-  font-size: 24px;
+  font-size: 27px;
   color: #003366;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .government-hero-subtitle {
@@ -1309,6 +1312,20 @@ font-family: 'Arial', sans-serif;
   text-align: left;
 }
 
+.commissioners-section h3 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 200;
+  color: #003366;
+  font-size: 35px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.commissioners-section h5 {
+  font-family: 'Arial', sans-serif;
+  color: #333333;
+  margin-bottom: 10px;
+  text-align: left;
+}
 
 /* Government Directory Area */
 .government-directory-section {
@@ -1355,8 +1372,15 @@ font-family: 'Arial', sans-serif;
   font-size: 1.1rem;
   color: #003366;
   font-family: 'Open Sans', sans-serif;
+  text-align: left;
 }
-
+.gov-card p {
+  margin: 10px;
+  font-size: 16px;
+  color: #333333;
+  font-family: 'Arial', sans-serif;
+  text-align: left;
+}
 /* Visitor Page Elements  */
 
 
@@ -1725,10 +1749,19 @@ button[aria-expanded="false"] .rotate-icon {
   }
 }
 
-
-
 /*Event Page Dimensions*/
-/* Responsive Tweaks for Mobile and Tablet */
+
+/* primary font for all headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* secondary font for paragraph and links */
+p, a {
+  font-family: 'Arial', sans-serif;
+}
+
+/*  Mobile and Tablet responsiveness */
 @media (max-width: 991.98px) {
   .events-title {
     font-size: 1.75rem;
